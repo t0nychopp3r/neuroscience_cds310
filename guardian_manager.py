@@ -45,6 +45,6 @@ class GuardianManager:
         self.ble._disconnect()
         print("Disconnected")
 
-    def recoridngs(self):
+    def recordings(self):
         recorings = self.api.get_recordings()
         return print(recorings)

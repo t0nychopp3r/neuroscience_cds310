@@ -10,7 +10,7 @@ gm = GuardianManager(
     api_key="idun_2zZuE2ImqssU8T0HnVOlkJNutPXc6q_9nAt0DpTNtrAYgcocAHhEbxoI"
 )
 
-#gm.recoridngs()
+gm.recordings()
 #gm.stream_data(5, callback)
 #gm.disconnect_session()
-gm.stream_data_jaw(callback)
+#gm.stream_data_jaw(callback)
