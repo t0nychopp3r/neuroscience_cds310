@@ -1,0 +1,4 @@
+08-Apr-24 18:26:01: root - INFO - No BLE address provided, will search for device...
+08-Apr-24 18:26:01: root - INFO - [BLE]: BLE client initiliazed
+08-Apr-24 18:26:06: root - INFO - [BLE]: One IGEB device found, assinging address B8B16A14-0859-20A2-9BD3-85EB2DDA2923
+08-Apr-24 18:26:06: root - INFO - [BLE]: Received address as B8B16A14-0859-20A2-9BD3-85EB2DDA2923
