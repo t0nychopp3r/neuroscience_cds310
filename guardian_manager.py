@@ -24,7 +24,7 @@ class GuardianManager:
         while datetime.datetime.now() - start_time < datetime.timedelta(seconds=duration):
             pass
 
-    def stream_data_jaw(self, callback=lambda data: data):
+    def stream_data_jaw(self, callback):
         data = self.api.get_recordings()    
         ongoing_recording_id = None
         # Überprüfen, ob 'status' == 'ONGOING' für jedes Element in den Daten
@@ -35,7 +35,7 @@ class GuardianManager:
         #self.ble.stop_recording()
         recording_id = self.api.start_recording(None, filtered_stream=True, raw_stream=False)
         self.ble.start_recording(self.api.callback)
-        self.api.subscribe_rt(['JAW_CLENCH'], lambda data: print(data))
+        self.api.subscribe_rt(['JAW_CLENCH'], callback)
         while True:
             pass
 
