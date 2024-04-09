@@ -4,11 +4,15 @@ from keyboardmapping import keyboard_mapping_right
 
 def callback(data):
     print(data)
+
+    '''
     if 'JawClench' in data[1]: 
         print("*********Jaw Clench detected**********")
         keyboard_mapping_right()
     else:
         print("No Jaw Clench detected")
+
+    '''
     
 
 gm = GuardianManager(
@@ -17,6 +21,6 @@ gm = GuardianManager(
 )
 
 #gm.recordings()
-#gm.stream_data(5, callback)
+gm.stream_data(callback)
 #gm.disconnect_session()
-gm.stream_data_jaw(callback)
+#gm.stream_data_jaw(callback)
