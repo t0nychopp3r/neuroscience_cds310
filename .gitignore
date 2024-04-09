@@ -1,0 +1,23 @@
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Node.js
+node_modules/
+
+# Compiled output
+dist/
+out/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# TypeScript
+*.tsbuildinfo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
