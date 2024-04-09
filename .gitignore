@@ -21,3 +21,6 @@ jspm_packages/
 
 # Windows
 Thumbs.db
+
+#ignore folder __pycache__
+__pycache__/
