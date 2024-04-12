@@ -1,23 +1,25 @@
 from guardian_manager import GuardianManager
 from keyboardmapping import keyboard_mapping_right
+from jaw_clench_detector import detector
+
 
 
 def callback(data):
-    print(data)
-
-    '''
-    if 'JawClench' in data[1]: 
+    jaw_clench_detection = detector(data)
+    if 'JawClench' in jaw_clench_detection: 
         print("*********Jaw Clench detected**********")
         keyboard_mapping_right()
     else:
         print("No Jaw Clench detected")
 
-    '''
+    #print(jaw_clench_detection)
+
+
     
 
 gm = GuardianManager(
-    device_id="D6-96-7C-C5-2E-14",
-    api_key="idun_2zZuE2ImqssU8T0HnVOlkJNutPXc6q_9nAt0DpTNtrAYgcocAHhEbxoI"
+    device_id="EB-2D-14-92-D6-71",
+    api_key="idun_2YV1BILW_T95lLajPwP2WHLqAxuYyuYheMKj-frjs7jBQz1wsbuaxSOh"
 )
 
 #gm.recordings()
